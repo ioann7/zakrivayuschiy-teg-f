@@ -291,7 +291,7 @@
 
 .disk-svg {
   fill: var(--diff-accent-color);
-  width: 21px;
+  min-width: 21px;
   height: 21px;
   position: relative;
   z-index: 1;
