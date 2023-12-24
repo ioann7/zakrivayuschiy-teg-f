@@ -321,7 +321,7 @@ dialog::backdrop {
 
 .modal__wrapper {
   color: var(--accent-color);
-  margin: 30px clamp(2.5rem, 2.7201rem + -0.939vw, 1.875rem);
+  margin: 30px;
 }
 
 .modal__title {
@@ -362,6 +362,10 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
     margin-right: 0;
+  }
+
+  .modal__wrapper {
+    margin-inline: 42px;
   }
 
 }
