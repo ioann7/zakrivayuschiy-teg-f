@@ -281,7 +281,7 @@
 .button__text {
   white-space: nowrap;
   mix-blend-mode: difference;
-  color: var(--button-text-color);
+  color: var(--diff-accent-color);
 }
 
 .save-cards-button {
@@ -290,7 +290,7 @@
 }
 
 .disk-svg {
-  fill: var(--bg-color);
+  fill: var(--diff-accent-color);
   width: 21px;
   height: 21px;
   position: relative;

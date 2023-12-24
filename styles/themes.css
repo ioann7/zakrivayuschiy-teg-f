@@ -1,7 +1,7 @@
 :root.theme-dark {
     --accent-color: #00CC14;
     --text-stroke-color: #000;
-    --button-text-color: #00CC14;
+    --diff-accent-color: #00CC14;
     --bg-color: #000;
     --bg-grd-lines-color: #000;
     --bg-grd-from: #007f0c;
@@ -11,7 +11,7 @@
 :root.theme-light {
     --accent-color: #000;
     --text-stroke-color: #fff;
-    --button-text-color: #fff;
+    --diff-accent-color: #fff;
     --bg-color: #fff;
     --bg-grd-lines-color: #d3d3d3;
     --bg-grd-from: #e7e7e7 0.01%;
@@ -22,7 +22,7 @@
     :root {
         --accent-color: #00CC14;
         --text-stroke-color: #000;
-        --button-text-color: #00CC14;
+        --diff-accent-color: #00CC14;
         --bg-color: #000;
         --bg-grd-lines-color: #000;
         --bg-grd-from: #007f0c;
