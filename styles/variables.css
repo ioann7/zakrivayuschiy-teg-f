@@ -1,1 +1,45 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-fam-accent: 'Press Start 2P', fantasy;
+    --font-fam-content: 'Inter', sans-serif;
+    --font-size-accent: 14px;
+    --font-size-content: 18px;
+    --font-inter-title-wght: 700;
+    --font-inter-content-wght: 400;
+
+    --content-width: clamp(380px, 50%, 700px);
+
+    --accent-color: #000;
+    --heart-accent-color: red;
+    --text-stroke-color: #fff;
+    --button-text-color: #fff;
+    --bg-color: #fff;
+    --bg-grd-lines-color: #d3d3d3;
+    --bg-grd-from: #e7e7e7 0.01%;
+    --bg-grd-to: #1a1a1a;
+    --bg-image:
+      repeating-linear-gradient(
+        270deg,
+        var(--bg-grd-lines-color),
+        var(--bg-grd-lines-color) 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        var(--bg-grd-lines-color),
+        var(--bg-grd-lines-color) 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(
+        180deg,
+        var(--bg-grd-from),
+        var(--bg-grd-to)
+      );
+}
+
+@media (width <= 375px) {
+    :root {
+        --content-width: 100%;
+    }
+}
