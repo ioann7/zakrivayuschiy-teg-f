@@ -1,4 +1,7 @@
 :root.theme-dark {
+    --font-title-wght-second: 785;
+    --font-content-wght-second: 465;
+
     --accent-color: #00CC14;
     --text-stroke-color: #000;
     --diff-accent-color: #00CC14;
@@ -19,7 +22,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root.theme-auto {
+        --font-title-wght-second: 785;
+        --font-content-wght-second: 465;
+    
         --accent-color: #00CC14;
         --text-stroke-color: #000;
         --diff-accent-color: #00CC14;

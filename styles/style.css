@@ -2,9 +2,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--accent-color);
-  font-family: var(--font-fam-content);
-  font-size: var(--font-size-content);
-  font-variation-settings: 'wght' var(--font-inter-content-wght);
+  font-family: var(--font-fam-second);
+  font-size: var(--font-size-second);
+  font-variation-settings: 'wght' var(--font-content-wght-second);
+  line-height: 21px;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-attachment: fixed;
@@ -34,6 +35,7 @@
   padding-block-end: 23px;
   font-family: var(--font-fam-accent);
   font-size: var(--font-size-accent);
+  line-height: 14px;
 }
 
 .header__logo {
@@ -46,19 +48,25 @@
   text-decoration: none;
 }
 
+.header__logo:focus {
+  outline: none;
+}
+
 .header__logo__main-text {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header__logo__explanatory-text {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-weight: 400;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.86em;
   align-items: start;
 }
 
@@ -110,6 +118,7 @@
   inline-size: 14px;
   block-size: 14px;
   inset-inline-start: -20px;
+  inset-block-start: 0px;
   animation: moving-arrow 0.5s infinite alternate ease-in-out;
 }
 
@@ -129,9 +138,10 @@
 }
 
 .card__title {
-  font-size: var(--font-size-content);
-  font-variation-settings: 'wght' var(--font-inter-title-wght);
-  padding: 5px 24px 5px 10px;
+  font-size: var(--font-size-second);
+  font-variation-settings: 'wght' var(--font-title-wght-second);
+  line-height: 22px;
+  padding: 4.5px 24px 4.5px 10px;
 }
 
 .card__image-wrapper {
@@ -152,6 +162,7 @@
   position: absolute;
   font-family: var(--font-fam-accent);
   font-size: var(--font-size-accent);
+  line-height: 14px;
   inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   inset-block-start: 25px;
   opacity: 50%;
@@ -219,7 +230,7 @@
   background-color: transparent;
   padding: 0;
   border: 2px solid transparent;
-  transition: border 0.3s ease;
+  transition: border-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -247,8 +258,9 @@
   cursor: pointer;
   font-family: var(--font-fam-accent);
   font-size: var(--font-size-accent);
+  line-height: 12.6px;
   border: 2px solid currentColor;
-  transition: border 0.3s ease;
+  transition: box-shadow 0.3s ease;
   width: 100%;
   height: 100%;
 }
@@ -339,6 +351,7 @@ dialog::backdrop {
 
 .modal__title-text {
   font-size: var(--font-size-accent);
+  line-height: 21px;
   font-weight: 400;
 }
 
@@ -351,6 +364,26 @@ dialog::backdrop {
 
   .card__title {
     padding: 3.5px 10px 5.5px 10px;
+  }
+
+  .card:nth-child(1) .card__title {
+    padding: 5px 10px 3px 10px;
+  }
+
+  .card:nth-child(2) .card__content__text:nth-child(1) p {
+    padding-inline-end: 1.95px;
+  }
+
+  .card:nth-child(4) .card__content__text:nth-child(1) p {
+    padding-inline-end: 2.95px;
+  }
+
+  .card:nth-child(8) .card__content__text:nth-child(1) p {
+    padding-inline-end: 0.95px;
+  }
+
+  .card__content__text:nth-child(1) p {
+    padding-inline-end: 3.95px;
   }
 
   .save-cards-button {

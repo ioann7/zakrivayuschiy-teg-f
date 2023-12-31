@@ -1,10 +1,10 @@
 :root {
     --font-fam-accent: 'Press Start 2P', fantasy;
-    --font-fam-content: 'Inter', sans-serif;
+    --font-fam-second: 'Inter', sans-serif;
     --font-size-accent: 14px;
-    --font-size-content: 18px;
-    --font-inter-title-wght: 700;
-    --font-inter-content-wght: 400;
+    --font-size-second: 18px;
+    --font-title-wght-second: 700;
+    --font-content-wght-second: 400;
 
     --content-width: clamp(380px, 50%, 700px);
 
